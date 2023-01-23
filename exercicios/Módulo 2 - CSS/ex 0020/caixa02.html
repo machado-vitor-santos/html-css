@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags em HTML5</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(139, 138, 138);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        nav{
+            background-color: rgb(92, 91, 91);
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        nav > a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 30px;
+            
+            }
+
+            nav > a:hover{
+                text-decoration: underline;
+            }
+
+    </style>
+</head>
+<body>
+    <!--Cabeçalho possui o Título principal e um <nav> que da suporte semântico aos links-->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+            <a href="">Link 4</a>
+            <a href="">Link 5</a>
+        </nav>
+    </header>
+
+    <!-- Main tem uma importância semântica na delimitação do conteúdo principal do site-->
+    <main>
+        <!-- A section é usada como caiza genérica de conteúdos-->
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <!-- O article é empregue como uma secção de conteúdo com título próprio-->
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore ipsam, inventore quae reprehenderit architecto unde iusto cum fugiat cumque nisi ab animi quia quas nesciunt! Atque accusantium magni quis.</p>
+                <!-- A aside é empregue para infromações anexas/periféricas ao conteúdo principal do texto-->
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+        <!-- O footer é comumente associado a créditos e informações de contato, autoria e localização-->
+    <footer>
+        <p>Desenvolvido pelo CursoemVídeo</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>
