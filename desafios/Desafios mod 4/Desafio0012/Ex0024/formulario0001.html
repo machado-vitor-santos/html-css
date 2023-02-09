@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form method="post" action="cadastro.php" autocomplete="off">
+        <p><label for="nome">Nome:</label> 
+            <input type="text" name="nome" id="nome"></p>
+        <p><label for="sobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="sobrenome"></p>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- A diferença entre name e id:
+            * Para linguagens como o PHP, o "name" é com mais frequência levado em consideração como identificador.
+            * Já na Linguagem como o Java o "id" ocupa esta função.
+
+            obs. Por isso todos os campos de entrada devem ser identificados com id e name
+
+            GET- tem uma limitação menor no envio de dados
+            -->
+</body>
+</html>
