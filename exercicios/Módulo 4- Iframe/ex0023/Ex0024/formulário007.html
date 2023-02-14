@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     , initial-scale=1.0">
     <title>Formulário 7</title>
 </head>
+
 <body>
-    <h1>Exemplo de Formulário</h1>
-    <form action="" method="get" autocomplete="on">
+    <h1>Formulário 7</h1>
+    <form action="" method="post" autocomplete="on">
         <p>
             <label for="iest">Estado:</label>
             <select name="est" id="iest">
@@ -19,12 +21,28 @@
                     <option value="RJ">Rio de Janeiro</option>
                     <option value="MG">Minas Gerais</option>
                 </optgroup>
-                    <optgroup label="Região Sul">
-                        <option value="SC">Santa Catarina</option>
-                        <option value="PR">Paraná</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                    </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
             </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="Administrador"></option>
+                <option value="Professor"></option>
+                <option value="Engenheiro"></option>
+                <option value="Desenvolvedor"></option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
         </p>
 
         <p>
@@ -33,4 +51,5 @@
         </p>
     </form>
 </body>
+
 </html>
