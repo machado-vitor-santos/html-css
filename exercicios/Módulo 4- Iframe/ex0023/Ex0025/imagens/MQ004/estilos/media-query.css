@@ -1,12 +1,156 @@
 @charset "UTF-8";
 
-/* screen para Tablet: */
+/* Todas as demais mídias*/
 
-/* screen para Impressora: */
+/*Typical Device Breakpoints*
+Mobile devices – 320px — 480px. - Mobile first
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more.
+*/
+
+/* Impressão */
 @media print {
+    * {
+        /* Desnecessário Background image, porque não aparece na impressão */
+        background-image: url(../imagens/back-print.jpg); 
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.fghjd.com';
+    }
+    
+    h1#tit{
+        color: black;
+        text-shadow: none;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+    
+    img#phone {
+        display: none;
+    }
+    
+    img#tablet {
+        display: none;
+    }
+    
+    img#print {
+        display: block;
+    }
+    
+    img#pc {
+        display: none;
+    }
+    
+    img#tv {
+        display: none;
+    }
     
 }
 
-/* screen para Computador: */
+/* Ipads e Tablets */
+@media screen and (min-width:480px) and (max-width: 768px) { 
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
 
-/* screen para Televisão: */
+    img {
+        display: block;
+        margin: auto;
+    }
+    
+    img#phone {
+        display: none;
+    }
+    
+    img#tablet {
+        display: block;
+    }
+    
+    img#print {
+        display: none;
+    }
+    
+    img#pc {
+        display: none;
+    }
+    
+    img#tv {
+        display: none;
+    }
+}
+
+/* Telas pequenas e Laptops */
+@media screen and (min-width:768px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+    
+    img#phone {
+        display: none;
+    }
+    
+    img#tablet {
+        display: none;
+    }
+    
+    img#print {
+        display: none;
+    }
+    
+    img#pc {
+        display: block;
+    }
+    
+    img#tv {
+        display: none;
+    }
+}
+
+/* Telas extra grandes*/
+@media screen and (min-width:1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+    
+    img#phone {
+        display: none;
+    }
+    
+    img#tablet {
+        display: none;
+    }
+    
+    img#print {
+        display: none;
+    }
+    
+    img#pc {
+        display: none;
+    }
+    
+    img#tv {
+        display: block;
+    }
+}
