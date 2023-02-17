@@ -1,0 +1,28 @@
+Como adicionar uma imagem em HTML, na pratica!
+
+(As primeiras três linhas são as que aparecem na descrição do texto)
+
+descrever a tag img 
+
+(usar imagem)
+
+explicar os componentes
+
+Arquivos in loco
+Url
+uso do Ctrl + Space
+
+explicar como preenchê-los
+
+Imagem Dinâmica
+A importância de imagens dinâmicas
+
+(usar imagem da tag picture e source juntas)
+
+A tag picture e semântica 
+
+A tag source (usar imagem)
+
+explicar os componentes
+explicar como preenchê-los
+
