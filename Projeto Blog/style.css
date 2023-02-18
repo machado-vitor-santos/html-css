@@ -1,14 +1,113 @@
+/* tag para habilitar alguns caracteres de acentuação */
 @charset "UTF-8";
+
+/* tag de fontes */
+@font-face {
+    font-family:'Glock';
+    src: url(Fontes/Gloock-Regular.ttf) format(truetype);
+
+    font-family:'Labrada';
+    src: url(Fontes/Labrada-Regular.ttf) format(truetype);
+}
+
+/* TAG para habilitar o uso de variáveis em CSS */
+:root {
+    /* Cores de trabalho */
+    --cor1: #012030;
+    --cor2: #13678A;
+    --cor3: #45C4B0;
+    --cor4: #9AEBA3;
+    --cor5: #DAFDBA;
+
+    /* Fontes de trabalho */
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-titulo:'Glock', coursive;
+    --font-subtitulo:'Labrada', sans-serif;
+}
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: opx;
 }
 
+body{
+    background-color: var(--cor5)
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    color: white;
+}
+
+header h1 {
+    padding: 5px;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    font-family: var(--font-titulo);
+    font-size: 2.8em;
+    text-shadow: 2px 2px 3px black;
+}
+
+nav{
+    background-color: var(--cor2);
+    padding-bottom: 18px;
+}
+
+nav a {
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px 10px 0px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: var(--cor2);
+}
+
+main {
+    background-color: #9AEBA3;
+    max-width: 700px;
+    margin: auto;
+}
+
+h2 {
+    font-family: var(--font-subtitulo);
+}
+
+
 p {
+    padding: 15px;
     text-align: justify;
     line-height: 2em;
 }
 
 p.ex {
     text-decoration: underline;
+}
+
+footer {
+    background-color: #012030;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: lightgray;
+    font-weight: bolder;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    font-weight: slighter;
 }
