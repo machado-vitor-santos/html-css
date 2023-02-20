@@ -1,3 +1,5 @@
+/* Versão Mobile First */
+
 /* tag para habilitar alguns caracteres de acentuação */
 @charset "UTF-8";
 
@@ -49,33 +51,52 @@ header h1 {
     text-shadow: 2px 2px 3px black;
 }
 
-nav{
-    background-image: linear-gradient(to top, var(--cor2), var(--cor2));
-    padding: 10px;
+header menu {
+    padding: 0px;
+    display: none;
 }
 
-nav a {
-    padding: 5px;
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#menu-burger {
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    cursor: pointer;
+}
+
+header ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+header a{
+    border-top: 2px solid white;
+    background-color:var(--cor2) ;
+    display: block;
     text-decoration: none;
-    color: black;
-    border: 1px solid black;
-    margin: 0px 15px 0px 0px;
+    text-align: center;
+    color: white;
+    padding: 2px;
     font-weight: bold;
-    box-shadow: 2x 2px 10px rgba(0, 0, 0, 0.459);
+    transition: 0.3s;
 }
 
-nav a:hover {
-    border-radius: 3px;
-    text-decoration: none;
-    background-color: var(--cor2);
-    background-color: white;
+header a:hover{
+    background-color: var(--cor3);
     color: black;
-    transition: 0.4s;
 }
+
 
 main {
     background-color: var(--cor4);
-    max-width: 700px;
+    width: 70vw;
     margin: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
     border-bottom-left-radius: 20px;

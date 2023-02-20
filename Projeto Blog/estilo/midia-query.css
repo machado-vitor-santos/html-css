@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Media Queries
+-----------------------------
+Print (impressora)
+Telas pequenas até 375px
+iPad até 1024px
+Laptop até 1440px
+Desktop até 1680px
+Telas Grandes mais de 1680px
+*/
+
+@media print {
+
+    header h1{
+        font-size: 2em;
+    }
+
+    menu{
+        display: none;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    #menu-burger{
+        display: none;
+    }
+
+    article a{
+        text-decoration: none;
+        color: black;
+    }
+
+    p::after {
+        content:'Site Feito por Vitor Machado, todos os direitos garantidos';
+    }
+
+    
+}
