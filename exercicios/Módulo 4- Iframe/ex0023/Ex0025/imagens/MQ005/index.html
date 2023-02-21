@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Meu Site com Menu Responsivo</h1>
         <!--Para faxer o menu "hamburguinho" é necessário Java Script-->
@@ -67,6 +67,14 @@
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'
+            }
+        }
+
+        function mudoutamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
             }
         }
     </script>
