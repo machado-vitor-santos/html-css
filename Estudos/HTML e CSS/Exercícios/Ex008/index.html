@@ -1,29 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Negrito e Itálico</title>
+    <style> /*Abre a TAG para customização*/
+        mark {/*elemento a ser customizado*/
+            background-color: limegreen;
+            /*atributo a ser customizado*/
+        }
+    </style>
 </head>
+
 <body>
     <h1>Negrito e Itálico Semânticos</h1>
-    <h2>Empregando o Negrito</h2>
+    <h2>Negrito / Destaque</h2>
     <p>
         Nesta frase vou <b>utilizar o negrito</b> de uma forma não semântica com a TAG &lt;b&gt;. Não se deve fazê-lo
+        <!--TAG <b> não é semântica, logo não deve ser usada-->
     </p>
 
     <p>
-        Nesta frase vou utilizar o <strong>negrito de uma forma semântica</strong>. Deve-se fazê-lo com a tag &lt;strong&gt;
+        Nesta frase vou utilizar o <strong>negrito de uma forma semântica</strong>. Deve-se fazê-lo com a tag
+        &lt;strong&gt; <!--TAG <strong> é semântica, logo deve ser usada-->
     </p>
-    <h2>Empregando o itálico</h2>
+    <h2>Itálico / Ênfase</h2>
     <p>
         Nesta frase vou <i>utilizar o itálico</i> de uma forma não semântica com a TAG &lt;i&gt;. Não se deve fazê-lo
+        <!--TAG <i> não é semântica, logo não deve ser usada-->
     </p>
 
     <p>
         Nesta frase vou <em>utilizar o itálico de uma forma semântica</em>. Deve-se fazê-lo com a tag &lt;em&gt;
+        <!--TAG <em> é semântica, logo deve ser usada-->
+    </p>
+    <h2>Texto Marcado</h2>
+    <p>
+        Podemos criar também um <mark>mark texto marcado</mark> usando a TAG &lt;mark&gt;
+        <!--TAG <mark> marca o texto-->
+
+    </p>
+    <p>
+        E no outro parágrafo, temos <mark>outro texto marcado </mark> no final.
+    </p>
+    <h2>Texto grande e pequeno</h2>
+    <p>
+        Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo <!--A TAG <big> ficou obsoleta, mas ainda aumenta a letra. Já o <small> permanece e diminui a letra-->
+    </p>
+    <h2>Texto deletado</h2>
+    <p>
+        Podemos marcar um <del>texto como excluido</del> para indicar que ele deve ser lido, mas não considerado. <!-- A TAG <del> cria um risco no meio do texto e indica que ele deve ser disconsiderado-->
+    </p>
+    <h2>Texto inserido</h2>
+    <p>
+        Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois. <!--A TAG <ins> sublinha o texto de forma semântica-->
+    </p>
+    <p>
+        Existe também o <u>sublinhado</u> com a tag &lt;u&gt; (não semântica)<!--A TAG <u> sublinha o texto de forma não semântica-->
+    </p>
+    <h2>Texto sobrescrito</h2>
+    <p>
+        Para inserir coisas do tipo x<sup>20</sup>+3 <!-- <sup> Texto sobrescrito que nem se lê um exponencial-->
+    </p>
+    <h2>Texto subscrito</h2>
+    <p>
+        Para inserir coisas do tipo H<sub>2</sub>0 <!--<sub> Texto subscrito, que nem se lê o H2O com o dois 'pequeno'-->
     </p>
 
 </body>
+
 </html>
