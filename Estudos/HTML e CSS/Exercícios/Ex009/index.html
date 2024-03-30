@@ -9,7 +9,7 @@
 <body>
     <h1>Trabalhando com listas</h1>
     <h2>Listas Ordenadas</h2> <!--Aquelas em que a ordem faz diferença-->
-    <ol type="1" start="4"> <!-- Comando de lista ordenada, o type ="CTRL + espaço define o tipo", caso seja numerada pode-se usar a tag interna start =" que define por número começara a ordem"-->
+    <ol type="1" start="4"> <!-- "ordered list" - Comando de lista ordenada, o type ="CTRL + espaço define o tipo", caso seja numerada pode-se usar a tag interna start =" que define por número começara a ordem"-->
         <li>Acordar</li> <!-- list item <li>, um para cada item da lista que se for fazer-->
         <li>Ligar para o João</li>
         <li>Tomar cadé</li>
@@ -29,6 +29,54 @@
         <li>Manteiga</li>
         <li>Arroz</li>
         <li>Feijão</li>
-    </ul>
+    </ul>   
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a"> <!--Uso de 'aninhamento', uma coisa dentro da outra como se fosse um ninho-->
+            <li>Clipper</li>
+            <li>fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5"> <!--O start funciona e se aplica com um padrão numérico (1..n)-->
+            <li>PhP</li>
+            <li>Phyton</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>Nintendo</li>
+        <ul> <!-- para corrigir, ou reescrever mais de uma TAG ao mesmo tempo, basta segurar o ALT e posicionar nos pontos de correção com o cursor do mouse-->
+            <li>Mário</li>
+            <li>Mário Bross</li>
+            <ul type="circle"> <!--Organização em varios níveis-->
+                <li>Mario Bross 3</li>
+                <li>Mario Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>Super Nintendo</li>
+        <ul>
+            <li>Mário</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul>
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl> <!--definition list-->
+        <dt>HTML</dt> <!--Termo-->
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd> <!--Definição dele (explicação)-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade para um site.</dd>
+    </dl> <!--Usar <dt> e <dd> facilita muito com mecanismos de busca-->
 </body>
 </html>
