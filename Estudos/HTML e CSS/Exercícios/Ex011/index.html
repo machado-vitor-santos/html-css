@@ -24,10 +24,10 @@
    <!--
    <audio src="media/Genesis.mp3" controls></audio> Para inserir o ádio emprega-se a TAG <audio src ="nome do arquivo 'controls -> adiciona controles de áudio a página' 'autoplay -> faz com que o áudio seja carregado assim que a página carrega'>"--> <!--Dos formatos de áudio: mp3, wave, ogg
     -->
-    <audio preload="metadata" controls> <!--forma compatível com todos os navegadores-->
+    <audio preload="metadata" controls loop> <!--forma compatível com todos os navegadores--> <!--O loop faz com que ao chegar no final do áudio ele recarregue o áudio-->
         <source src="media/Genesis.mp3" type="audio/mpeg"> <!--Arquivo de mídia em pasta, src="nomedoarquivo.formato" type="audio/mpeg(mp3), ogg(ogg) e wav(wav)"-->
         <source src="media/Genesis.ogg" type="audio/ogg">
-        <source src="media/Genesis.wav" type="audio/wav">
+        <source src="media/Genesis.wav" type="audio/wav"> <!--Tente evitar os arquivos WAV, pois tendem a serem muito grandes e pesados-->
         <!--obs. fazer um src para cada tipo de formato, podem ser buscados na internet através de um ocnversor de áudio de mp3 para os demais-->
         <p>
             Infelizmente seu navegador não consegue reproduzir áudio. <a href="media/Genesis.mp3" download="media/Genesis.mp3" type="application.mp3">Clique aqui para baixar o arquivo mp3</a>
