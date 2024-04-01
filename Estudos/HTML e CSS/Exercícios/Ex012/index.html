@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inserindo vídeos</title>
+    <title>Vídeos com HTML5</title>
 </head>
+
 <body>
-    <h1>Inserindo vídeos</h1> <!--Formatos de arquivos de vídeos: .mp4, .m4v, webm, e ogv.-->
+    <h1>Inserindo Vídeos Hospedados Localmente</h1> <!--Formatos de arquivos de vídeos: .mp4, .m4v, webm, e ogv.-->
+    <!-- Os arquivos de vídeo podem ser comvertidos do mp4 para eles através de um conversor de vídeo online. A necessidade de ter os vídeos em vários formatos surge dado que os navegadores aceitam diferentes formatos entre si-->
+    <!--Fazer imagem de tumb para vídeo-->
+    <p>
+        Este vídeos está hospedado no meu próprio servidor.
+    </p>
+    <!--
+    <video src="media/video.mp4" width="500" controls></video> src="nomedoarquivo.formato", adicionei um width:500px, para visualizar os controles de pause e play é ncessário colocar o 'controls'
+    -->
+    <video controls poster="imagem/foto-video.png" width="500"> <!--controls dentro da TAG <video> insere os controles basicos de play/pause/volume; width define o comprimento em px; poster="arquivo.png" insere uma foto como capa do vídeo-->
+        <source src="media/video.mp4" type="video/mp4"> <!--O vídeo de que vai tentar primeiro, depois segundo e ..n; type = "video/formato". De cima para baixo-->
+        <source src="media/video.m4v" type="video/mp4">
+        <source src="media/video.webm" type="video/webm">
+        <source src="media/video.ogv" type="video/ogg">
+        <p>
+            Seu navegador não tem compatibilidade com reprodução de vídeos.
+        </p>
+    </video>
     
+
+
 </body>
+
 </html>
