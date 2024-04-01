@@ -17,7 +17,7 @@
     <!--
     <video src="media/video.mp4" width="500" controls></video> src="nomedoarquivo.formato", adicionei um width:500px, para visualizar os controles de pause e play é ncessário colocar o 'controls'
     -->
-    <video controls poster="imagem/foto-video.png" width="500"> <!--controls dentro da TAG <video> insere os controles basicos de play/pause/volume; width define o comprimento em px; poster="arquivo.png" insere uma foto como capa do vídeo-->
+    <video controls poster="imagem/foto-video.png" width="560" loop> <!--controls dentro da TAG <video> insere os controles basicos de play/pause/volume; width define o comprimento em px; poster="arquivo.png" insere uma foto como capa do vídeo; loop reproduz em sequência-->
         <source src="media/video.mp4" type="video/mp4"> <!--O vídeo de que vai tentar primeiro, depois segundo e ..n; type = "video/formato". De cima para baixo-->
         <source src="media/video.m4v" type="video/mp4">
         <source src="media/video.webm" type="video/webm">
@@ -26,9 +26,9 @@
             Seu navegador não tem compatibilidade com reprodução de vídeos.
         </p>
     </video>
-    
 
-
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=m9wNjbIUt7X6zzVL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--Não está consumindo dados do servidor, e sim do Youtube--> <!--Youtube não permitirá que o vídeo seja visto por 'assiantes'. Neste caso usar o Vímeo--><!--Vimeo tem uma qualidade de vídeo muito boa, mas tende a travar mais que o youtube em casos de internet não muito boa-->
 </body>
 
 </html>
