@@ -24,10 +24,11 @@
    <!--
    <audio src="media/Genesis.mp3" controls></audio> Para inserir o ádio emprega-se a TAG <audio src ="nome do arquivo 'controls -> adiciona controles de áudio a página' 'autoplay -> faz com que o áudio seja carregado assim que a página carrega'>"--> <!--Dos formatos de áudio: mp3, wave, ogg
     -->
-    <audio>
-        <source src="media/Genesis.mp3" type="audio/mpeg">
+    <audio> <!--forma compatível com todos os navegadores-->
+        <source src="media/Genesis.mp3" type="audio/mpeg"> <!--Arquivo de mídia em pasta, src="nomedoarquivo.formato" type="audio/mpeg(mp3), ogg(ogg) e wav(wav)"-->
         <source src="media/Genesis.ogg" type="audio/ogg">
         <source src="media/Genesis.wav" type="audio/wav">
+        <!--obs. fazer um src para cada tipo de formato, podem ser buscados na internet através de um ocnversor de áudio de mp3 para os demais-->
     </audio>
  
 </body>
