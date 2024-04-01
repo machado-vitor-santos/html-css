@@ -16,5 +16,19 @@
         <source media="(max-width:1050px)" srcset="imagens/imagem-media.png" type="image/png"> <!-- Trabalhar com max-width: tamanhoem(px), irá carregar a 'img src grande primeiro', mas caso o seu navegador tenha menos de 1000px de largura, irá carregar a imagem alternativa descrita em 'srcset', necessário colocar o type="image/"formato da imagem""-->
         <img src="imagens/imagem-grande.png" alt="imagem flexível"> <!--É necessário se preocupar com rolagem lateral em sites, caso exista necessário remover--> <!-- Ver mais sobre bounce rate no Google-->
     </picture> <!--Adapte o tamanho das imagens do seu site ao tamanho de tela dos usuários, porque isso vai fazer total diferença na experiência do usuário ao acessar seu site--> <!--obs. em ma-width, sempre botar 50px a mais que o tamanho da imagem-->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>
+        Vamos aprender a reproduzir áudios em HTML5
+    </p>
+   <!--
+   <audio src="media/Genesis.mp3" controls></audio> Para inserir o ádio emprega-se a TAG <audio src ="nome do arquivo 'controls -> adiciona controles de áudio a página' 'autoplay -> faz com que o áudio seja carregado assim que a página carrega'>"--> <!--Dos formatos de áudio: mp3, wave, ogg
+    -->
+    <audio>
+        <source src="media/Genesis.mp3" type="audio/mpeg">
+        <source src="media/Genesis.ogg" type="audio/ogg">
+        <source src="media/Genesis.wav" type="audio/wav">
+    </audio>
+ 
 </body>
 </html>
