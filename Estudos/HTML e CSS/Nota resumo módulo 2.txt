@@ -1,0 +1,16 @@
+Módulo 2 do curso:
+
+Cores (identificação delas e seus tipos);
+Harmonização das cores (paletas de cores para determinado site),
+Tipografia(e famílias tipográficas)
+Alinhamento de parágrafo, tipo de fontes.
+Ferramenta que identifica cores e tipografias que vi em sites online.
+
+id e classes, pseudoclasses, pseudoelementos, variáveis
+
+modelo de caixas, como funciona dentro da CSS, borda, aplicação de vértice, sombra, degradê.
+
+Comoriar um site do zer:
+Idealização do site; construção do iframe em ferramentas disponíveis gratuitamente na internet; Será definido: paleta de cores, tipografia, tipo de conteúdo, imagens (como modelá-las). 
+
+E introduzido o conceito de responsividade.

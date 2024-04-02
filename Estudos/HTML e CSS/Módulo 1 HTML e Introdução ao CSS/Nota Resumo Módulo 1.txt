@@ -1,0 +1,14 @@
+Introdução ao HTML:
+
+Inserção de símbolos especiais (&gt; &lt; emoticons etc..);
+Dawload e modificação de imagens com GIMP;
+Favicon, como fazê-lo ou baixá-lo;
+Hierarquia de títulos;
+Negrito e itálico semântico;
+TAGS de texto (sublinhado, delete, marca texto);
+Listas(ordenadas, não ordenadas e mistas);
+Links e âncoras (internos, externos, dowload, indexando sites externos, não indexando sites externos, backlinks (autoridade do site);
+Imagens Dinâmicas;
+Inserir Áudio multiformato;
+Como inserir videos(interno e externo);
+Introdução ao CSS (elementos inline,locais ou internos e link externo). 
