@@ -6,7 +6,7 @@
     <title>Trabalhando com fontes</title>
     <style>
         body {
-            font-family:Arial, Helvetica, sans-serif; /*temos que colocar aqui apenas fontes que existam no dispositivo
+            font-family:Work sans, Helvetica, sans-serif; /*temos que colocar aqui apenas fontes que existam no dispositivo
             Explicação: font-family:Arial (1°tentativa), Helvetica(2°tentativa), (caso nenhuma insere uma fonte sem serifa) sans-serif;*/
             font-size: 1em; /* para medidas de fonte é recomendado o uso do px e do em, sabendo que 16px é o tamanho padrão*/
             /*
@@ -20,6 +20,20 @@
             vw (largura(%) da viewport 'tela'),
             vh (comprimento (%) da viewport 'tela')
             */
+            font-weight: 400; /*peso da fonte*/
+            /* exitem: lighter, normal, bold, bolder
+            obs. nem todas as fontes tem todos
+            pode também ser expressa por números de 100-900
+            Sendo 400 o normal*/
+            font-style: normal; /*optar por itálico ou normal*/
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
         }
 
     </style>
