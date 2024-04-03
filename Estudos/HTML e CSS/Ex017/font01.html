@@ -26,14 +26,23 @@
             pode também ser expressa por números de 100-900
             Sendo 400 o normal*/
             font-style: normal; /*optar por itálico ou normal*/
-            text-decoration: underline;
+            text-decoration: none;
         }
 
         h1 {
-            font-family: sans-serif;
+            /* font-style: italic;
             font-weight: bolder;
             font-size: 3em;
-            font-style: italic;
+            font-family: sans-serif; */
+
+            /* shorthand font: (outra forma de escrever o que está em cima)
+            
+            font-style -> font-weight - > font-size -> font-family*/
+            font: italic bolder 3em sans-serif;
+        }
+
+        h2 {
+            font: normal bold 2em Arial;
         }
 
     </style>
