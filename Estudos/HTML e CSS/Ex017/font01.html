@@ -8,11 +8,20 @@
         body {
             font-family:Arial, Helvetica, sans-serif; /*temos que colocar aqui apenas fontes que existam no dispositivo
             Explicação: font-family:Arial (1°tentativa), Helvetica(2°tentativa), (caso nenhuma insere uma fonte sem serifa) sans-serif;*/
+            font-size: 1em; /* para medidas de fonte é recomendado o uso do px e do em, sabendo que 16px é o tamanho padrão*/
+            /*
+            Medidas absolutas:
+            cm, mm, in, px, pt, pc
+
+            Medidas relativas: 
+            em(relativo ao M maiusculo de uma letra), 
+            ex (relativo ao x minúsculo de uma letra),
+            rem (tipo o em só que relativo ao 'root', fonte que está configurada no body),
+            vw (largura(%) da viewport 'tela'),
+            vh (comprimento (%) da viewport 'tela')
+            */
         }
 
-        h1, h2 { /* forma de referenciar dois atributos conjuntos na CSS3. TAGs separadas pelo uso da ","*/
-            font-family: 'Times New Roman', Times, serif;
-        }
     </style>
 </head>
 <body> <!--font-family define o atributo da familia de fontes a ser escolhida-->
