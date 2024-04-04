@@ -6,20 +6,37 @@ em HTML é class = em CSS .
 */
 
 body {
-    background-color: rgb(206, 243, 206);
+    background-color: #9cebaf;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    color: darkgreen;
+    color: #272c28;
 }
 
 h1#principal { /* # identifica o id = ""*/
     text-align: center;
     color: white;
-    background-color: darkgreen;
+    background-color: #0B6421;
 }
 
 h2 {
-    color: rgb(28, 133, 28);
+    color: #0F862D;
+}
+
+.basico { /* Identifica a class = "basico" */
+    color: #0F862D;
+    font-weight: bold;
+}
+
+h2.intermerdiario{/* Identifica a class = "intermediária", com origem no h2 */
+    color: #74860f;
+}
+
+h2.avançado{
+    color: #862b0f;
+}
+
+.destaque {
+    background-color: rgba(180, 180, 0, 0.644);
 }
