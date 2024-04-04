@@ -38,4 +38,206 @@
         Fim do Exemplo
     </p>
 </body>
-</html>
+</html> 
+<!--
+    Lista de CSS Display:
+    display: block -> transforma o elemento em tipo block
+    display:inline -> transforma o elemento em tipo inline
+    display: flex -> 
+    display: grid ->
+    display: none -> desabilita o display, item não aparece
+-->
+
+<!--
+    Lista de pseudo classes e suas funções:
+    :hover -> pode ser usado para alterar a cor de um botão quando o usuário passar o cursor sobre ele
+
+    :active -> para estilizar aprorpiadamente os links, você precisa colocar a regra :active depois de todas as outras regras relacionadas ao link, conforme definido por ordem (LVHA)
+    :link "links não-visitados"
+    :visited "links visitados"
+    :hover ""
+    :active "links ativos"
+
+    :checked -> A pseudo-classe de um seletor CSS representa um elemento radio (<input type"radio">), checkbox (<input type = "checkbox">) ou option(<option> em um <select>). Que está marcadada ou alternado para um estado ligado. O usuário pode mudar seu estado clicando no elemento, ou selecionando um valor diferente, neste caso pseudo-classe :checked, não se aplica a esse elemento, mas vai para um elemento relevante.
+    Ex: input:checked {
+        margin-left: 25px;
+        border: 1px solid blue;
+        }
+
+    :disabled -> representa qualquer elemento desativado. Um elemento é desativado se não puder ser ativado (selecionado, clicado, digitado etc.) ou aceitar o foco. O elemento também possui um estado habilitado, no qual ele pode ser ativado ou aceitar o foco.
+    Ex: input[type="text"]:disabled {
+        background: #ccc;
+    }
+    
+    :empty -> repressenta qualquer elemento que não tenha filhos. Aqui, os filhos podem ser outros elementos ou blocos de texto (incluindo espaços em branco). Comentários e instruções de processamento não são considerados ao se determinar se um elemento é vazio.
+    Ex: /* Seleciona qualquer <div> que não tenha conteúdo */
+        div:empty {
+        background: lime;
+        }
+
+    :enabled -> representa qualquer elemento ativado. Um elemento é ativado se puder ser ativado (selecionado, clicado, digitado, etc.)ou aceitar o foco. O elemento também possui um estado desativado, no qual não pode aceitar ser ativado nem aceitar foco.
+    Ex:/* Seleciona qualquer <input> ativado */
+    input:enabled {
+    color: blue;
+    }
+
+    :first-child -> representa qualquer elemento que seja o primeiro filho de seus pais.
+    Ex: (HTML)
+    <div>
+    <span>Este span é verde limão!</span>
+    <span>Este span não é verde limão. :(</span>
+    </div>
+    (CSS)
+    span:first-child {
+    background-color: lime;
+    }
+
+    :first-of-type -> representa o primeiro elemento de seu tipo entre os filhos de seu elemento pai.
+    Ex: /* Seleciona qualquer <p> que seja o primeiro elemento
+    desse tipo entre seus irmãos */
+    p:first-of-type {
+    color: red;
+    }
+
+    :focus -> esta pseudo-classe do CSS é aplicada quando o elemento recebe foco, o que pode ocorrer quando o usuário seleciona o elemento utilizando o teclado ou ativando o mesmo com o mouse (ex: um campo de um formulário)
+    Ex: .nome:focus {
+        color: red;
+        }
+
+    :invalid -> Essa pseudo-class representa qualquer elemento <input> ou <form> cujo conteúdo não esteja válido. Essa pseudo-classe é útil para usuário identificar quais campos foram preenchidos incorretamente.
+    Ex:
+    input:invalid {
+    background-color: #ffdddd;
+    }
+
+    form:invalid {
+    border: 5px solid #ffdddd;
+    }
+
+    input:valid {
+    background-color: #ddffdd;
+    }
+
+    form:valid {
+    border: 5px solid #ddffdd;
+    }
+        
+    :last-child -> representa qualquer elemento que é o último filho de seu pai.
+    Ex: (HTML)
+    <ul>
+    <li>Esse item não é afetado pelo estilo.</li>
+    <li>Esse também não.</li>
+    <li>Esse item é! :)</li>
+    </ul>
+    (CSS)
+    li:last-child {
+    background-color: lime;
+    }
+
+    last-of-type -> representa o último irmão com o nome de elemento dado na lista de filhos de seu elemento pai.
+    Ex: p em:last-of-type {
+    color: lime;
+    }
+
+    :link -> Esta pseudo-class permite que você selecione os links dentro de um elemento. Ela seleciona todos os links, até mesmo os que não foram visitados, incluindo os links já estilizados em outras classes ou ids com o :hover, :active ou :visited. Para um funcionamento adequado é essencial que ela venha antes das regras: :visited, :hover, :active.
+    Ex: a:link {
+    color: slategray;
+    }
+    .external:link {
+    background-color: lightblue;
+    }
+
+    :not A pseudo-classe de negação é uma notação funcional que recebe um seletor simples X como argumento. Ela seleciona um elemento que não é representado por seu argumento. X pode não conter outro seletor de negação.
+    
+    Nota: Seletores inúteis podem ser escritos usando esta pseudo-classe. Por exemplo, :not(*) seleciona qualquer elemento que não é algum elemento, então a regra nunca é aplicada.
+    Ex:
+    :not(selector) { style properties }
+
+    :nth-child() -> seleciona elementos com base em suas posições em um grupo de elementos irmãos.
+    Ex:
+    * Seleciona um a cada quatro elementos
+    de qualquer grupo de elementos irmãos,
+    começando do quarto elemento (4, 8 12, etc.). */
+    :nth-child(4n) {
+    color: lime;
+    }
+
+    :nth-last-child() -> seleciona um ou mais elementos com base em sua posição entre um grupo de elementos-irmãos, contando a partir do último.
+    Ex: 
+    /* Seleciona todo quarto elemento
+    em qualquer grupo de irmãos,
+    contando do último para o primeiro */
+    :nth-last-child(4n) {
+    color: lime;
+    }
+
+    :nth-of-type() -> corresponde a um ou mais elementos de um dado tipo, baseado em sua posição entre um grupo de irmãos.
+    Ex:
+    /* Parágrafos ímpares */
+    p:nth-of-type(2n + 1) {
+    color: red;
+    }
+
+    :only-child -> representa um elemento sem nenhum elemento-irmão. É o mesmo que :first-child:last-child ou :nth-child(1):nth-last-child(1), mas com uma especificidade mais baixa.
+    Ex:
+    /* Seleciona cada <p>, mas apenas se for o */
+    /* único filho de seu elemento-pai */
+    p:only-child {
+    background-color: lime;
+    }
+
+    :only-of-type -> representa qualquer elemento que não possui irmãos de um determinado tipo.
+    Ex: :only-of-type { propriedades}
+
+    :optional ->  representa qualquer elemento <input>, <select>, ou <textarea> que não contenha o atributo required. Esta pseudo-classe é utilizada para estilizar campos do formulário que não são requeridos para sumissão.
+    Ex:
+    /* Selects qualquer <input> opcional */
+    input:optional {
+    border: 1px dashed black;
+    }
+
+    :out-of-range -> epresenta um elemento de <entrada> cujo valor atual esta fora dos limites especificados pelo min e max atributos.
+    Ex:
+    * Selecione qualquer <entrada>, mas somente quando estiver dentros dos limites especificados, e quando este valor estiver fora deste limite */
+    input:out-of-range {
+    background-color: rgba(255, 0, 0, 0.25);
+    }
+
+    :read-write ->  representa um elemento (como o input ou textarea) que é editável pelo usuário. A pseudo-classe :read-write (:leitura-escrita) por outro lado, é usado para fornecer um estilo mais agradável para a <textarea>
+    Ex: (ver no documento do MDN em caso de dúvida quanto a aplicação)
+
+    :required -> A pseudo-classe CSS :required representa qualquer <input>, <select>, ou <textarea> contendo o atributo required. Elementos <input> obrigatórios devem ter o atributo required atribuídos. Isso garante que pessoas que navegam com auxílio de recursos de acessibilidade, como o leitor de tela, possam entender quais campos precisam ter conteúdos válidos para garantir a submissão dos dados.
+    Ex: /* Seleciona qualquer <input> requerido */
+    input:required {
+    border: 1px dashed red;
+    }
+
+    :root -> se equipara à raiz de uma árvore, que por sua vez representa o documento. Aplicado ao HTML, :root representa o elemento <html> e é idêntico ao seletor html, exceto que sua especificidade é mais alta.
+    Ex:
+    /* Seleciona o elemento raiz do documento:
+    <html> no caso do HTML */
+    :root {
+    background: yellow;
+
+    :target -> representa um único elemento (o elemento alvo) com uma id correspondente ao fragmento da URL.
+    Ex:
+    /* Seleciona um elemento com a ID correspondente ao fragmento da URL */
+    :target {
+    border: 2px solid black;
+    }
+
+    :valid -> representa qualquer <input> ou outro elemento do <form> (en-US) cujo conteúdo foi validado com sucesso. Isso permite, facilmente, adicionar uma aparência que ajude o usuário a identificar os campos validados.
+    Ex: 
+    /* Seleciona qualquer input válido */
+    input:valid {
+    background-color: powderblue;
+    }
+
+    :visited -> é uma Pseudo-classe do CSS para indicar se o link em questão já foi visitado pelo usuário. Por questões de privacidade, os styles que podem ser modificados usando este seletor são muito limitados.
+    Ex:
+    /* Seleciona qualquer <a> que poderá ser visitado */
+    a:visited {
+    color: green;
+    }
+} 
+-->
