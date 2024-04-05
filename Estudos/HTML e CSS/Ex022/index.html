@@ -9,12 +9,22 @@
             background-color: lightgray;
             height: 300px;
             width: 300px;
-            border-width: 10px;
+            border: 10px solid rgb(97, 96, 96); /* Este é o short hand*/
+
+            /*  border-width: 10px;
             border-style: solid;
-            border-color: rgb(97, 96, 96);
-            padding: 10px; 
+            border-color: rgb(97, 96, 96);*/
+
+            padding: 10px; /* se as quatro dimensõe sforem iguais basta informa uma única vez
+            
+            Colocando apenas duas medidas o primeiro corresponde a top/bottom e o segundo a right/left*/
+
             /* sentido do relógio: padding top, right, bottom, left */
-            margin: auto; /*deixar no meio da tela se for um block*/
+
+            margin: 20px auto 40px auto; /*deixar no meio da tela se for um block*/
+
+            outline: 5px dashed salmon;
+    
         }
         
         a {
@@ -22,6 +32,7 @@
             border-style: solid; /*dashed, groove, dotted, double */
             border-color: red;
             padding: 10px;
+        
         }
     </style>
 </head>
