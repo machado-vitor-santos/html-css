@@ -44,6 +44,14 @@ body {
   font-family: var(--fonte-padrao);
 }
 
+p {
+  margin: 15px 0px 15px 0px;
+  text-indent: 30px; /* espaço no início do parágrafo*/
+  text-align: justify;
+  line-height: 2em; /*espaçamento entre linhas*/
+  font-size: 1em;
+}
+
 header {
   background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
 }
@@ -69,6 +77,7 @@ header > p {
   padding-left: 10px;
   padding-bottom: 10px;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+  line-height: 1em;
 }
 
 nav {
@@ -110,9 +119,30 @@ main > article > h1 {
 }
 
 main > article > h2 {
-  color: var(--cor5);
+  color: var(--cor4);
   font-family: var(--fonte-idroid);
+  background-image: linear-gradient(to right, var(--cor1), transparent); /*linear- gradient com a cor 'transparent';*/
+  text-indent: 8px;
 } 
+
+main > article > p > strong {
+  font-weight: bold;
+  color: var(--cor4);
+  padding: 2px 6px 2px 6px;
+}
+
+main > article > p > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor5);
+  background-color: var(--cor1);
+  padding: 2px 6px 2px 6px;
+}
+
+main > article > p > a:hover {
+  text-decoration: underline;
+  color: var(--cor4);
+}
 
 main > article > img {
   width: 100%;
