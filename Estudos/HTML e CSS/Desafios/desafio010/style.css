@@ -80,9 +80,9 @@ header > p {
   text-align: center;
   padding-right: 10px;
   padding-left: 10px;
-  padding-bottom: 10px;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
   line-height: 1em;
+  margin-bottom: 20px;
 }
 
 nav {
@@ -151,7 +151,7 @@ main > article > p > a:hover {
   color: var(--cor4);
 }
 
-main > article > img {
+main img {
   width: 100%;
 
 }
@@ -162,20 +162,21 @@ main > article > img.pequena{
   margin: auto;
 }
 
-div.video{
-background-color: var(--cor5);
-margin: 0px -20px 30px -20px; /* colar o vídeo na esquerda*/
-padding: 20px;
-padding-bottom: 50%;
-position: relative; /* indica que esse é o plano de fundo */
+div.video {
+  background-color: var(--cor5);
+  margin-left: -20px;
+  position: relative;
+  padding-bottom: 50%;
+  
 }
 
-div.video > iframe{
- position: absolute; /* indica que esse é o plano que sobrepõem o plano de fundo */
- top: 5%; /* deve-se configurar o padding-top por porcentagem da tela*/
- left: 5%;/* deve-se configurar o padding-left por porcentagem da tela*/
- width: 90%;
- height: 90%;
+div.video iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+
 }
 
 aside {
