@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container{
+            position: relative; /*Já havia side feito, está foi nomeada relativa, ou seja, subeentendida*/
+            height: 96vh;
+            background-color: purple;
+            padding: 10px;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+        }
+
+        #conteudo{
+            position: absolute; /*essa foi sobreescrita*/
+            left: 50%; /* essa variável mede o quanto da distância do objeto ficará da esquerda. Só funciona em position absolute*/
+            top: 50%; /* essa variável mede o quanto da distância do objeto ficará de cima. Só funciona em position absolute*/
+
+            transform: translate(-50%, -50%); /* Muito importante pois ajusta o centro da box menor para com a box maior*/
+
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
