@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de tela</title>
     <style>
         body { /*atentar-se para botar as definições de background aonde ele está e não em uma sidebox como o main, neste caso*/
             height: 100vh;
-            background-color: black; /*É ideal configurar uma cor de fundo, para garantir que haverá algo durante o carregamento*/
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
+
+            /* Shothand - background 
+                color > image > position > repeat > attachment
+            */
+
+            background: black url(imagens/wallpaper002.jpg) top center no-repeat fixed;
             background-size: cover;
         }
 
         main { 
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -27,6 +29,15 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, voluptates ex? Sequi ad, labore quas porro, qui odit dolorum, autem saepe repellat impedit accusantium fuga natus vel quis officia voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vitae itaque sit earum et, quisquam esse autem nemo. Quam soluta repudiandae ipsam quod debitis laboriosam necessitatibus, cupiditate ad nemo porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, similique esse eum facere quo vitae corrupti est beatae fuga illo totam ullam. Nulla iste libero tempora iusto suscipit, quibusdam fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, voluptates ex? Sequi ad, labore quas porro, qui odit dolorum, autem saepe repellat impedit accusantium fuga natus vel quis officia voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vitae itaque sit earum et, quisquam esse autem nemo. Quam soluta repudiandae ipsam quod debitis laboriosam necessitatibus, cupiditate ad nemo porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, similique esse eum facere quo vitae corrupti est beatae fuga illo totam ullam. Nulla iste libero tempora iusto suscipit, quibusdam fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, voluptates ex? Sequi ad, labore quas porro, qui odit dolorum, autem saepe repellat impedit accusantium fuga natus vel quis officia voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vitae itaque sit earum et, quisquam esse autem nemo. Quam soluta repudiandae ipsam quod debitis laboriosam necessitatibus, cupiditate ad nemo porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, similique esse eum facere quo vitae corrupti est beatae fuga illo totam ullam. Nulla iste libero tempora iusto suscipit, quibusdam fugit.
+        </p>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, voluptates ex? Sequi ad, labore quas porro, qui odit dolorum, autem saepe repellat impedit accusantium fuga natus vel quis officia voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vitae itaque sit earum et, quisquam esse autem nemo. Quam soluta repudiandae ipsam quod debitis laboriosam necessitatibus, cupiditate ad nemo porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, similique esse eum facere quo vitae corrupti est beatae fuga illo totam ullam. Nulla iste libero tempora iusto suscipit, quibusdam fugit.
         </p>
