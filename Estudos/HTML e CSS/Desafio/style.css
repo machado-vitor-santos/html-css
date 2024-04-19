@@ -94,9 +94,24 @@ section.normal {
 section.imagem {
     background-color: rgba(0, 0, 0, 0.199);
     color: white;
+    inset: 6px 6px 13px 0px black; /*box-shaddow interno para imagens*/
 }
 
-section.imagem>p {
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+section.imagem > p {
     background-color: rgba(0, 0, 0, 0.281);
     display: inline-block; /*caixa que se adapta ao tamanho do canteúdo*/
     padding: 5px;
