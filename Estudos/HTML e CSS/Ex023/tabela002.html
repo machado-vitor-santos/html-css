@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semântica das tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+   
+            text-align: center;
+            vertical-align: auto;
+            padding: 10px;
+        }
+
+        th {
+            background-color: rgb(119, 117, 117);
+            color: white;
+        }
+
+        .cinza {
+            background-color: rgb(119, 117, 117);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--ANOATOMIA PARA TABELAS GRANDES
+    TABLE
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH (th = cabeçalho)
+        TFOOT   
+            TR, TD, TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Unidade Federativa</th>
+                <th>População (Censo de 2022)</th>
+                <th>População (Censo de 2010)</th>
+                <th>Mudança</th>
+                <th>% da pop total</th>
+                <th>País comparável (habitantes)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td class="num">44 411 238	</td>
+                <td class="num">41 262 199</td>
+                <td>+7.63%</td>
+                <td>21,88%</td>
+                <td>Argentina (46 621 847)</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718	</td>
+                <td class="num">19 597 330	</td>
+                <td>+4.81%</td>
+                <td>10,11%</td>
+                <td>Burquina Fasso (20 903 273)</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524	</td>
+                <td class="num">15 989 929	</td>
+                <td>+0.40%</td>
+                <td>7,91%</td>
+                <td>Camboja Camboja (16 718 965)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="cinza">YYY.ZZZ.JJJ</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
